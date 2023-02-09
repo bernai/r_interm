@@ -101,7 +101,7 @@ microbenchmark(transactions[,sum(Quantity),by=Customer],
                transactions[, relDate:= 1:.N, by=Customer]) # 12 ms mean vs 36ms 
 ```
 
-# 28 How to do it better
+## 28 How to do it better
 ```R
 # some variables for the test
 x = c(1, 2, 3, 4, 5)
@@ -125,7 +125,7 @@ microbenchmark(no_cmpfun(data), with_cmpfun(data), times=5L)
 # with_cmpfun: mean 1.527 s
 ```
 
-## Explicit parallelism
+## 31 Explicit parallelism
 
 ```R
 library(doParallel)
